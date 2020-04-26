@@ -1,9 +1,9 @@
-datasets <- list.files(path = "../data")
+datasets <- list.files(path = "./data", pattern = ".csv")
 
 all_data <- NULL
 
 for(i in 1:length(datasets)){
-    data <- read.csv(paste0("../data/", datasets[i]))
+    data <- read.csv(paste0("./data/", datasets[i]))
     data <- data[ , c("artist_name", "danceability", "energy", 
                       "loudness", "speechiness", "acousticness", 
                       "instrumentalness", "liveness", "valence", 
@@ -34,4 +34,4 @@ text(avg_data, labels = unique(all_data$artist_name))
 avg_data <- data.frame(artist = unique(all_data$artist_name),
                        avg_data)
 
-write.csv(avg_data, "../data/pca3_data.csv", row.names = FALSE)
+write.csv(avg_data, "./data/pca3_data.csv", row.names = FALSE)
