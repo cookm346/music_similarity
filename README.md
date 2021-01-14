@@ -23,7 +23,7 @@ What I did:
     * duration_ms
     * key_mode
     
-3. I used the first 11 variables along with 24 dummy variables to represent each song's musical key (A, A#, B, C, C#, D, D#, E, F, F#, G, and G# in both major and minor). This resulted in a dataset of 117,394 songs for 250 artists with 35 variables. Too much data too visualize.
+3. I used the first 11 variables along with 24 dummy variables to represent each song's musical key (A, A#, B, C, C#, D, D#, E, F, F#, G, and G# in both major and minor). This resulted in a dataset of 117,394 songs for 250 artists with 35 variables. Too much data to visualize.
 
 4. I used [Principal Components Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis) to reduce the 35 dimensional space down to just three latent dimensions that account for the most information in the 35 dimensional space. Three dimensions can be visualized.
 
